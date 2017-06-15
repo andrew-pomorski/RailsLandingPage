@@ -1,0 +1,6 @@
+<%= simple_form_for @person do |f| %>
+    <%= f.input :full_name, label: 'Full Name', :autofocus => true %>
+    <%= f.input :phone_no, label: 'Phone Number'%>
+    <%= f.input :email, label: 'Email' %>
+    <%= f.button :submit, 'Submit', :class => "submit-btn" %>
+<% end %>
