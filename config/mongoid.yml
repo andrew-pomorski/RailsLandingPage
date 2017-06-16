@@ -5,12 +5,14 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: forge
+      database: briteinvest_backend_database
+      # database: contact_form_development
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
         # - localhost:27017
-        - syd-mongos0.objectrocket.com:45120
+        # - syd-mongos0.objectrocket.com:45120
+        - syd-mongos0.objectrocket.com:45110
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -25,10 +27,10 @@ development:
         #     - use: web
 
         # The name of the user for authentication.
-        user: 'briteserver'
+        user: 'briteDatabaseAdmin2'
 
         # The password of the user for authentication.
-        password: 'XKuN2TbFz'
+        password: 'briteDatabasePassw0rd'
 
         # The user's database roles.
         # roles:
@@ -117,7 +119,7 @@ development:
 
     # Raise an error when performing a #find and the document is not found.
     # (default: true)
-    # raise_not_found_error: true
+      raise_not_found_error: false
 
     # Raise an error when defining a scope with the same name as an
     # existing method. (default: false)

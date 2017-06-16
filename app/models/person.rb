@@ -1,6 +1,9 @@
 class Person
   include Mongoid::Document
-  field :full_name, type: String
+  store_in collection: "formdata"
+  field :first_name, type: String
+  field :last_name, type: String
+  field :area_code, type: String
   field :phone_no, type: String
   field :email, type: String
 end

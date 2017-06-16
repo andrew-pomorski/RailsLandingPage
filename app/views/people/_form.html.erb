@@ -1,5 +1,7 @@
 <%= simple_form_for @person do |f| %>
-    <%= f.input :full_name, label: 'Full Name', :autofocus => true %>
+    <%= f.input :first_name, label: 'First Name', :autofocus => true %>
+    <%= f.input :last_name, label: 'Last Name', :autofocus => true %>
+    <%= f.input :area_code, :collection => %w[UK(+44) HongKong(+852) Dubai(+971) Australia(+61) US/Canada(+1)] %>
     <%= f.input :phone_no, label: 'Phone Number'%>
     <%= f.input :email, label: 'Email' %>
     <%= f.button :submit, 'Submit', :class => "submit-btn" %>

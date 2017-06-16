@@ -16,6 +16,11 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -25,8 +30,8 @@ html {
   padding: 0px;
 }
 .navbar-brand>img {
-  height: 10 0%;
-  padding: 15px;
+  height: 40px;
+  padding: 0px;
   width: auto;
 }
 
