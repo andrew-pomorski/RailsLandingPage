@@ -16,7 +16,24 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 
+.thank-you-msg {
+    font-weight: 600;
+    color: #2fb56c;
+}
 
+.box {
+  width: 40%;
+  margin: 0 auto;
+  padding: 35px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+
+.tickicon {
+    width: 120px;
+    height: 120px;
+}
 
 .form-inline div {
     display: inline-block;

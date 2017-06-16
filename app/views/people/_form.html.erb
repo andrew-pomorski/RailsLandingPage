@@ -1,10 +1,10 @@
 <%= simple_form_for @person do |f| %>
-    <%= f.input :first_name, label: 'First Name', :autofocus => true %>
-    <%= f.input :last_name, label: 'Last Name', :autofocus => true %>
-    <%= f.input :area_code, :collection => %w[+54 +61 +43 +32 +55 +1 +56 +86 +61 +45 +500 +679 +358 +33 +49 +350 +30 +852 +36 +354 +91 +62 +353 +44-1624 +39 +81 +960 +52 +31 +64 +47 +507 +595 +51 +63 +48 +351 +974 +7 +65 +252 +27 +82 +34 +46 +41 +66 +380 +971 +44 +1 +598 +84], label: 'Country Code' %>
-    <%= f.input :phone_no, label: 'Phone Number'%>
-    <%= f.input :email, label: 'Email' %>
-    <%= f.button :submit, 'Submit', :class => "submit-btn" %>
+    <%= f.input :first_name, label: 'First Name', :autofocus => true, required: true%>
+    <%= f.input :last_name, label: 'Last Name', :autofocus => true, required: true %>
+    <%= f.input :area_code, :collection => %w[+54 +61 +43 +32 +55 +1 +56 +86 +61 +45 +500 +679 +358 +33 +49 +350 +30 +852 +36 +354 +91 +62 +353 +44-1624 +39 +81 +960 +52 +31 +64 +47 +507 +595 +51 +63 +48 +351 +974 +7 +65 +252 +27 +82 +34 +46 +41 +66 +380 +971 +44 +1 +598 +84], required: true, label: 'Country Code' %>
+    <%= f.input :phone_no, label: 'Phone Number', required: true%>
+    <%= f.input :email, label: 'Email', required: true %>
+    <%= f.button :submit, 'Submit', :class => "submit-btn", :disabled => true,  id: 'submit_button' %>
 <% end %>
 
 
