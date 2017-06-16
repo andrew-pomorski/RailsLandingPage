@@ -13,14 +13,14 @@ class PeopleController < ApplicationController
 
     if @person.save 
       @success = true
-      render 'index'
+      render 'thank_you'
     else
-      redirect_to new_person_path
+      render 'thank_you'
     end
   end
 
   private
     def person_params
-      params.require(:person).permit(:first_name, :last_name, :phone_no, :email)
+      params.require(:person).permit(:first_name, :last_name, :area_code, :phone_no, :email)
     end
 end
