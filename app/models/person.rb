@@ -6,4 +6,6 @@ class Person
   field :area_code, type: String
   field :phone_no, type: String
   field :email, type: String
+  field :created_at, :type => Date, :default => Time.new.strftime("%Y-%m-%d %H:%M:%S")
+  
 end

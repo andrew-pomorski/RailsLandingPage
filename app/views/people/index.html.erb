@@ -26,7 +26,7 @@ a doddle and it only takes a few minutes.</div>
 <script>
 $(document).ready(function (){
     validate();
-    $('#person_first_name, #person_last_name, #person_area_code, #person_phone_no, #person_email').change(validate);
+    $('#person_first_name, #person_last_name, #person_area_code, #person_phone_no, #person_email').keyup(validate);
 });
 
 function validate(){
