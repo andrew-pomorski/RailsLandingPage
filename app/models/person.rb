@@ -6,4 +6,5 @@ class Person
   field :area_code, type: String
   field :phone_no, type: String
   field :email, type: String
+  field :created_at, type: String
 end

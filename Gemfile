@@ -21,7 +21,7 @@ gem 'simple_form', '~> 3.5'
 gem 'capistrano-rails', group: :development
 gem 'capistrano', group: :development
 gem 'capistrano-ext'
-
+gem 'thin'
 
 group :development, :test do
   gem 'byebug', platform: :mri
