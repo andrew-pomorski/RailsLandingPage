@@ -1,7 +1,7 @@
 <%= simple_form_for @person do |f| %>
     <%= f.input :first_name, label: 'First Name', :autofocus => true, required: true%>
     <%= f.input :last_name, label: 'Last Name', :autofocus => true, required: true %>
-        <%= f.input :area_code, :collection => ['Argentina','Australia','Austria','Belgium','Brazil','Canada','Chile','China','Christmas Island','Denmark','Falkland Islands','Fiji','Finland','France','Germany','Gibraltar','Greece','Hong Kong','Hungary','Iceland','India','Indonesia','Ireland','Isle of Man','Italy','Japan','Maldives','Mexico','Netherlands','New Zealand','Norway','Panama','Paraguay','Peru','Philippines','Poland','Portugal','Qatar','Russia','Singapore','Somalia','South Africa','South Korea','Spain','Sweden','Switzerland','Thailand', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Vietnam',], required: true, label: 'Country' %>
+        <%= f.input :area_code, :collection => ['Argentina','Australia','Austria','Belgium','Brazil','Canada','Chile','China','Christmas Island','Denmark','Falkland Islands','Fiji','Finland','France','Germany','Gibraltar','Greece','Hong Kong','Hungary','Iceland','India','Indonesia','Ireland','Isle of Man','Italy','Japan','Maldives','Mexico','Netherlands','New Zealand','Norway','Panama','Paraguay','Peru','Philippines','Poland','Portugal','Qatar','Russia','Singapore','Somalia','South Africa','South Korea','Spain','Sweden','Switzerland','Thailand', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Vietnam',], required: true, label: 'Country Code' %>
 
     <%= f.input :phone_no, label: 'Phone Number', required: true%>
     <%= f.input :email, label: 'Email', required: true %>
